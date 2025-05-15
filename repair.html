@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Equipment & Peripherals Repair Services</title>
+    <link rel="stylesheet" href="cleaning_styles.css">
+    <link rel="icon" href="fav.jpg" type="image/jpg">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init("hjZlCHAX-EOc9IXSL"); 
+        document.addEventListener("DOMContentLoaded", () => {
+            lucide.createIcons();
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Spybitech Investment CC</div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="#services">Services</a>
+                <a href="#why-choose-us">Why Us?</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>IT Equipment & Peripherals Repair Services</h1>
+            <p>Expert repair services for all your IT devices to keep your business running smoothly.</p>
+            <div class="cta-buttons">
+                <a href="#services" class="btn btn-primary">Explore Our Services</a>
+                <a href="#contact" class="btn btn-secondary">Request a Repair</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Repair Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Desktop & Laptop Repairs</h3>
+                    <p>We provide quick and efficient repairs for desktops and laptops, ensuring minimal downtime for your business:</p>
+                    <ul>
+                        <li>Hardware repair and replacement</li>
+                        <li>Software troubleshooting and reinstallation</li>
+                        <li>Overheating and battery issues</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Computer Peripheral Repairs</h3>
+                    <p>We fix all types of computer peripherals, helping you extend the lifespan of your accessories:</p>
+                    <ul>
+                        <li>Mouse and keyboard repairs</li>
+                        <li>Monitor screen replacements</li>
+                        <li>Printer and scanner troubleshooting</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Networking Equipment Repair</h3>
+                    <p>Ensure your network equipment is running at peak performance:</p>
+                    <ul>
+                        <li>Router and switch repairs</li>
+                        <li>Network cabling and troubleshooting</li>
+                        <li>Wi-Fi setup and configuration</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Mobile Device Repairs</h3>
+                    <p>We provide mobile device repairs to keep your workforce connected:</p>
+                    <ul>
+                        <li>Smartphone screen and battery replacements</li>
+                        <li>Tablet repairs</li>
+                        <li>Device diagnostics and software fixes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Spybitech for Repairs?</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <h3>Expert Technicians</h3>
+                    <p>Our team of certified professionals is experienced in repairing a wide range of devices.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Affordable Pricing</h3>
+                    <p>We offer competitive rates without compromising the quality of service.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Quick Turnaround Time</h3>
+                    <p>We understand the importance of time, and we aim to complete repairs as quickly as possible.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Warranty on Repairs</h3>
+                    <p>All our repairs come with a warranty, ensuring peace of mind after service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get Your Device Repaired Today</h2>
+            <p>If you need repairs, contact us now, and we’ll get your devices back in action.</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i data-lucide="phone"></i>
+                        <div>
+                            <p class="font-semibold">Phone</p>
+                            <p>+264 85 806 5994</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="mail"></i>
+                        <div>
+                            <p class="font-semibold">Email</p>
+                            <p>support@spybitech.com.na</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="map-pin"></i>
+                        <div>
+                            <p class="font-semibold">Address</p>
+                            <p>70 John Meinet Street, Windhoek, Namibia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="service-card">
+                        <img src="af8d9ac62dd43026957e1cf82a027637.gif" height="250px" alt="Inquiry Form Image">
+                        <h3>Leave Us a Note or Inquiry</h3>
+                        <form id="inquiry-form">
+                            <input type="email" name="user_email" placeholder="Email" required title="Email">
+                            <input type="text" name="user_name" placeholder="Full Name" required title="Full Name">
+                            <br><br>
+                            <textarea name="message" id="inquiry" placeholder="Enter your message here..." required></textarea>
+                            <br>
+                            <button type="submit" class="cta-button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById('inquiry-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            emailjs.sendForm('service_dlw3fhb', 'template_kgtxcv5', this)
+                .then(() => {
+                    alert('Your message has been sent successfully!');
+                }, (error) => {
+                    alert('Failed to send the message. Please try again later.');
+                    console.log('FAILED...', error);
+                });
+        });
+    </script>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Spybitech Investment CC. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computers & IT Equipment Supply</title>
+    <link rel="stylesheet" href="cleaning_styles.css">
+    <link rel="icon" href="fav.jpg" type="image/jpg">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init("hjZlCHAX-EOc9IXSL"); 
+        document.addEventListener("DOMContentLoaded", () => {
+            lucide.createIcons();
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Spybitech Investment CC</div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="#equipment">Equipment</a>
+                <a href="#brands">Brands</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Computers, Parts & IT Equipment Supply</h1>
+            <p>High-quality computing solutions for all your needs</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get a Quote</a>
+                <a href="#equipment" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipment" class="services">
+        <div class="container">
+            <h2>Our Offerings</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Computers</h3>
+                    <ul>
+                        <li>Desktops</li>
+                        <li>Laptops</li>
+                        <li>Workstations</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Parts</h3>
+                    <ul>
+                        <li>Processors</li>
+                        <li>Memory (RAM)</li>
+                        <li>Storage Devices (HDD, SSD)</li>
+                        <li>Graphic Cards</li>
+                        <li>Power Supplies</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>IT Equipment</h3>
+                    <ul>
+                        <li>Monitors</li>
+                        <li>Keyboards & Mice</li>
+                        <li>Networking Devices</li>
+                        <li>Printers & Scanners</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="brands" class="tools">
+        <div class="container">
+            <h2>Top Brands We Supply</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>Apple</h3>
+                    <p>Innovative products including MacBooks, iPads, and accessories.</p>
+                </div>
+                <div class="tool-card">
+                    <h3>HP</h3>
+                    <p>Trusted computing and printing solutions for businesses and individuals.</p>
+                </div>
+                <div class="tool-card">
+                    <h3>DELL</h3>
+                    <p>High-performance desktops, laptops, and enterprise solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i data-lucide="phone"></i>
+                        <div>
+                            <p class="font-semibold">Phone</p>
+                            <p>+264 85 806 5994</p>
+                            <p>WhatsApp: +264 85 352 2714</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="mail"></i>
+                        <div>
+                            <p class="font-semibold">Email</p>
+                            <p>info@spybitech.com.na</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="map-pin"></i>
+                        <div>
+                            <p class="font-semibold">Address</p>
+                            <p>70 John Meinet Street, Windhoek, Namibia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="clock"></i>
+                        <div>
+                            <p class="font-semibold">Business Hours</p>
+                            <p>Weekdays: 05:00 – 18:00</p>
+                            <p>Weekends: By Special Request</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="service-card">
+                        <img src="af8d9ac62dd43026957e1cf82a027637.gif" height="250px" alt="Inquiry Form Image">
+                        <h3>Leave Us a Note or Inquiry</h3>
+                        <form id="inquiry-form">
+                            <input type="email" name="user_email" placeholder="Email" required title="Email">
+                            <input type="text" name="user_name" placeholder="Full Name" required title="Full Name">
+                            <br><br>
+                            <textarea name="message" id="inquiry" placeholder="Enter your message here..." required></textarea>
+                            <br>
+                            <button type="submit" class="cta-button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById('inquiry-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            emailjs.sendForm('service_dlw3fhb', 'template_kgtxcv5', this)
+                .then(() => {
+                    alert('Your message has been sent successfully!');
+                }, (error) => {
+                    alert('Failed to send the message. Please try again later.');
+                    console.log('FAILED...', error);
+                });
+        });
+    </script>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Spybitech Investment CC. All rights reserved.</p>
+            <p>Your trusted partner for IT solutions and services</p>
+        </div>
+    </footer>
+</body>
+</html>

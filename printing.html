@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design & Digital Printing Services</title>
+    <link rel="stylesheet" href="cleaning_styles.css">
+    <link rel="icon" href="fav.jpg" type="image/jpg">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init("hjZlCHAX-EOc9IXSL"); 
+        document.addEventListener("DOMContentLoaded", () => {
+            lucide.createIcons();
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Spybitech Investment CC</div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="#services">Services</a>
+                <a href="#why-choose-us">Why Us?</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Graphic Design & Digital Printing</h1>
+            <p>Creating stunning designs and high-quality prints to bring your vision to life.</p>
+            <div class="cta-buttons">
+                <a href="#services" class="btn btn-primary">Explore Our Services</a>
+                <a href="#contact" class="btn btn-secondary">Get a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Graphic Design & Printing Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Posters Design</h3>
+                    <p>We specialize in creating eye-catching posters that effectively communicate your message:</p>
+                    <ul>
+                        <li>Custom design tailored to your brand</li>
+                        <li>High-quality graphics and visuals</li>
+                        <li>Effective layout and typography for maximum impact</li>
+                        <li>Posters for events, promotions, advertisements, and more</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Digital Printing</h3>
+                    <p>High-quality printing services for all your marketing materials:</p>
+                    <ul>
+                        <li>Full-color printing with vibrant results</li>
+                        <li>Poster printing in various sizes</li>
+                        <li>Fast turnaround times to meet tight deadlines</li>
+                        <li>Eco-friendly printing options available</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Spybitech for Design & Printing?</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <h3>Creative Designs</h3>
+                    <p>Our team of experienced designers creates unique and compelling designs to elevate your brand.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Quality Printing</h3>
+                    <p>We use state-of-the-art printing technology to deliver crisp, vibrant prints that stand out.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Affordable Rates</h3>
+                    <p>Our design and printing services are offered at competitive prices to suit your budget.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Fast Turnaround</h3>
+                    <p>We understand the importance of deadlines and ensure timely delivery of your printed materials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get Started with Your Design & Printing</h2>
+            <p>Contact us now to discuss your poster design and printing needs, and get a custom quote.</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i data-lucide="phone"></i>
+                        <div>
+                            <p class="font-semibold">Phone</p>
+                            <p>+264 85 806 5994</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="mail"></i>
+                        <div>
+                            <p class="font-semibold">Email</p>
+                            <p>support@spybitech.com.na</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="map-pin"></i>
+                        <div>
+                            <p class="font-semibold">Address</p>
+                            <p>70 John Meinet Street, Windhoek, Namibia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="service-card">
+                        <img src="af8d9ac62dd43026957e1cf82a027637.gif" height="250px" alt="Inquiry Form Image">
+                        <h3>Leave Us a Note or Inquiry</h3>
+                        <form id="inquiry-form">
+                            <input type="email" name="user_email" placeholder="Email" required title="Email">
+                            <input type="text" name="user_name" placeholder="Full Name" required title="Full Name">
+                            <br><br>
+                            <textarea name="message" id="inquiry" placeholder="Enter your message here..." required></textarea>
+                            <br>
+                            <button type="submit" class="cta-button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('inquiry-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            emailjs.sendForm('service_dlw3fhb', 'template_kgtxcv5', this)
+                .then(() => {
+                    alert('Your message has been sent successfully!');
+                }, (error) => {
+                    alert('Failed to send the message. Please try again later.');
+                    console.log('FAILED...', error);
+                });
+        });
+    </script>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Spybitech Investment CC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect and animations
+        document.addEventListener('DOMContentLoaded', function() {
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('.header');
+                header.classList.toggle('scrolled', window.scrollY > 50);
+            });
+
+            setTimeout(() => {
+                document.querySelector('.hero-content').classList.add('show');
+            }, 500);
+
+            const serviceCards = document.querySelectorAll('.service-card');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('show');
+                });
+            }, { threshold: 0.1 });
+
+            serviceCards.forEach(card => observer.observe(card));
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

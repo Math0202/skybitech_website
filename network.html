@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking Services</title>
+    <link rel="stylesheet" href="cleaning_styles.css">
+    <link rel="icon" href="fav.jpg" type="image/jpg">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init("hjZlCHAX-EOc9IXSL"); 
+        document.addEventListener("DOMContentLoaded", () => {
+            lucide.createIcons();
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Spybitech Investment CC</div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="#services">Services</a>
+                <a href="#process">Process</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Networking Services</h1>
+            <p>Comprehensive networking solutions for businesses and organizations</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <a href="#services" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Networking Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Network Architecture & Design</h3>
+                    <p>We create robust network blueprints tailored to your specific needs, ensuring scalability and efficiency.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Network Installations</h3>
+                    <p>Expert setup of LAN, WAN, and wireless networks with seamless integration of your devices.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Network Maintenance</h3>
+                    <p>Keep your network running smoothly with proactive monitoring and regular updates.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Network Expansion</h3>
+                    <p>Effortlessly scale your network infrastructure to accommodate business growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="process">
+        <div class="container">
+            <h2>Our Process</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <h3>1. Consultation</h3>
+                    <p>Understanding your requirements and existing infrastructure.</p>
+                </div>
+                <div class="process-step">
+                    <h3>2. Design</h3>
+                    <p>Crafting a tailored network architecture for your needs.</p>
+                </div>
+                <div class="process-step">
+                    <h3>3. Implementation</h3>
+                    <p>Installing and configuring network components with precision.</p>
+                </div>
+                <div class="process-step">
+                    <h3>4. Support</h3>
+                    <p>Ongoing maintenance and optimization to ensure peak performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i data-lucide="phone"></i>
+                        <div>
+                            <p class="font-semibold">Phone</p>
+                            <p>+264 85 806 5994</p>
+                            <p>WhatsApp: +264 85 352 2714</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="mail"></i>
+                        <div>
+                            <p class="font-semibold">Email</p>
+                            <p>info@spybitech.com.na</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="map-pin"></i>
+                        <div>
+                            <p class="font-semibold">Address</p>
+                            <p>70 John Meinet Street, Windhoek, Namibia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="clock"></i>
+                        <div>
+                            <p class="font-semibold">Business Hours</p>
+                            <p>Weekdays: 05:00 – 18:00</p>
+                            <p>Weekends: By Special Request</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="service-card">
+                        <img src="af8d9ac62dd43026957e1cf82a027637.gif" height="250px" alt="Inquiry Form Image">
+                        <h3>Leave Us a Note or Inquiry</h3>
+                        <form id="inquiry-form">
+                            <input type="email" name="user_email" placeholder="Email" required title="Email">
+                            <input type="text" name="user_name" placeholder="Full Name" required title="Full Name">
+                            <br><br>
+                            <textarea name="message" id="inquiry" placeholder="Enter your message here..." required></textarea>
+                            <br>
+                            <button type="submit" class="cta-button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('inquiry-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            emailjs.sendForm('service_dlw3fhb', 'template_kgtxcv5', this)
+                .then(() => {
+                    alert('Your message has been sent successfully!');
+                }, (error) => {
+                    alert('Failed to send the message. Please try again later.');
+                    console.log('FAILED...', error);
+                });
+        });
+    </script>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Spybitech Investment CC. All rights reserved.</p>
+            <p>Your trusted partner for IT solutions and services</p>
+        </div>
+    </footer>
+</body>
+</html>

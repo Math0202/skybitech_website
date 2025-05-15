@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business & IT Consultancy Services</title>
+    <link rel="icon" href="fav.jpg" type="image/jpg">
+    <link rel="stylesheet" href="cleaning_styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init("hjZlCHAX-EOc9IXSL"); 
+        document.addEventListener("DOMContentLoaded", () => {
+            lucide.createIcons();
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Spybitech Investment CC</div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="#services">Services</a>
+                <a href="#case-studies">Service case-studies</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Business & IT Consultancy Services</h1>
+            <p>Empowering businesses with cutting-edge IT solutions and strategic insights.</p>
+            <div class="cta-buttons">
+                <a href="#services" class="btn btn-primary">Learn More</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Consultancy Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Business Strategy Consulting</h3>
+                    <p>We help you craft strategies to drive business growth and success:</p>
+                    <ul>
+                        <li>Market analysis and opportunity identification</li>
+                        <li>Business model innovation</li>
+                        <li>Strategic planning and implementation</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>IT Infrastructure Consulting</h3>
+                    <p>Optimize your IT systems for maximum efficiency and reliability:</p>
+                    <ul>
+                        <li>Network architecture and design</li>
+                        <li>System integration and upgrades</li>
+                        <li>Cloud migration and optimization</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Technology Solutions Consulting</h3>
+                    <p>Leverage the latest technology to stay ahead of the competition:</p>
+                    <ul>
+                        <li>Custom software solutions</li>
+                        <li>Enterprise resource planning (ERP) systems</li>
+                        <li>Big data and analytics strategies</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>IT Risk & Security Consulting</h3>
+                    <p>Safeguard your business from potential IT threats:</p>
+                    <ul>
+                        <li>Cybersecurity assessments and solutions</li>
+                        <li>Data protection and privacy compliance</li>
+                        <li>Business continuity planning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="case-studies" class="case-studies">
+        <div class="container">
+            <h2>Case Studies</h2>
+            <p>Here are some examples of how we've transformed businesses:</p>
+            <div class="case-studies-grid">
+                <div class="case-study-card">
+                    <h3>Improved IT Efficiency for a Retail Chain</h3>
+                    <p>Revamped their IT infrastructure to reduce downtime by 40%.</p>
+                </div>
+                <div class="case-study-card">
+                    <h3>Strategic Growth for a Startup</h3>
+                    <p>Provided market analysis and strategic direction, boosting revenue by 25%.</p>
+                </div>
+                <div class="case-study-card">
+                    <h3>Enhanced Cybersecurity for a Bank</h3>
+                    <p>Implemented advanced security protocols, preventing potential breaches.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Let’s discuss how we can help your business grow and succeed.</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i data-lucide="phone"></i>
+                        <div>
+                            <p class="font-semibold">Phone</p>
+                            <p>+264 85 806 5994</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="mail"></i>
+                        <div>
+                            <p class="font-semibold">Email</p>
+                            <p>info@spybitech.com.na</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="map-pin"></i>
+                        <div>
+                            <p class="font-semibold">Address</p>
+                            <p>70 John Meinet Street, Windhoek, Namibia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="af8d9ac62dd43026957e1cf82a027637.gif" alt="Inquiry Form Image">
+                    <h3>Leave Us Your Note or Inquiry</h3>
+                     <form id="inquiry-form">
+                    <input type="email" name="user_email" placeholder="Email" required title="Email">
+                    <input type="text" name="user_name" placeholder="Full Name" required title="Full Name">
+                    <br><br>
+                    <textarea name="message" id="inquiry" placeholder="Enter your message here..." required></textarea>
+                    <br>
+                    <button type="submit" class="cta-button">Submit</button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById('inquiry-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            emailjs.sendForm('service_dlw3fhb', 'template_kgtxcv5', this)
+                .then(() => {
+                    alert('Your message has been sent successfully!');
+                }, (error) => {
+                    alert('Failed to send the message. Please try again later.');
+                    console.log('FAILED...', error);
+                });
+        });
+    </script>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Spybitech Investment CC. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
