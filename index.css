@@ -1,0 +1,469 @@
+html {
+    scroll-behavior: smooth;
+ }
+ #mainDiv {
+     width: 100%;
+     min-height: 800px;
+     height:auto;
+     padding-bottom:20px;
+     background-color:#FAF9F6;
+     /* background-color: red; */
+ }
+ #head {
+     width:100%;
+     min-height:90px;
+     height:auto;
+     background-color:#3940e5;
+     /* border-radius: 40px; */
+     display:flex;
+     justify-content:center;
+     gap:10px;
+     align-items:center;
+     flex-wrap:wrap;
+ }
+ #logoDiv {
+     width:170px;
+     height:80%;
+     /* margin-right:70px; */
+     /* background-color:red; */
+ }
+ #logo {
+     width:100%;
+     height: 100%;
+ }
+ #hrefDiv {
+     height:80%;
+     width:60%;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     /* background-color:green; */
+ }
+ #mediaDiv {
+     width:15%;
+     min-height:80%;
+     height:auto;
+     display:flex;
+     align-items:center;
+     flex-wrap:wrap;
+
+     /* background-color:yellow; */
+ }
+ #nav {
+     width:100%;
+     display:flex;
+     justify-content:center;
+     flex-wrap:wrap;
+     text-align: center;
+     gap:40px;
+     
+     /* background-color:red; */
+ }
+ .navs {
+     color:white;
+     text-decoration: none;
+     font-family: Arial, sans-serif;
+     font-size:20px;
+ }
+ .navs:hover {
+     color:red;
+ }
+ #mediaNav {
+     min-height:30px;
+     height:auto;
+     width:100%;
+     display:flex;
+     justify-content:center;
+     gap: 30px;
+ }
+ .navs2 {
+     color:white;
+     font-size:25px;
+ }
+ #contentDiv {
+     width:100%;
+     height:628px;
+     /* background-color:green; */
+     display:flex;
+ }
+ #imageDiv {
+     height:100%;
+     width:90%;
+     position:relative;
+     /* background-color:red; */
+ }
+ #infoDiv {
+     height:100%;
+     width:30%;
+     background-color:#FAF9F6;
+     display:flex;
+     /* align-items:center; */
+     flex-direction:column;
+     justify-content:center;
+     gap:10px;
+     filter:drop-shadow(2px 2px 2px white)
+ }
+ #image {
+     width:100%;
+     height:100%;
+ }
+ #imageOverlay {
+ position: absolute;
+ top: 0;
+ right: 0;
+ width: 50%; /* Adjust as needed */
+ height: 100%;
+ background: linear-gradient(to right, transparent, #FAF9F6);
+ pointer-events: none; /* Allows clicks to pass through */
+ }
+ .welcome {
+     font-size:60px;
+     font-family: Arial, sans-serif;
+     font-weight:bold;
+     margin-left:-160px;
+     color:blue;
+ }
+ .paragraph {
+     margin-left:-160px;
+     font-family: Arial, sans-serif;
+     /* font-weight:bold; */
+ }
+ #buttonsDiv {
+     margin-left:-160px;
+ }
+ .buttons {
+     width:140px;
+     height:50px;
+     margin-right:10px;
+     border-radius: 6px;
+     color:white;
+     background-color:red;
+     border: 2px solid transparent;
+     font-family: Arial, sans-serif;
+     font-weight:bold;
+     font-size:14px;
+     cursor: pointer;
+ }
+ .buttons:hover {
+     background-color:white;
+     border: 2px solid black;
+     color:black;
+ }
+ #aboutDiv {
+     width: 100%;
+     min-height:500px;
+     height:auto;
+     /* background-color:red; */
+     display:flex;
+     align-items:center;
+     /* justify-content:center; */
+     margin-top:80px;
+     flex-direction:column;
+     gap:35px;
+     flex-wrap:wrap;
+ }
+ #aboutParagraphDiv {
+     width:55%;
+     text-align:center;
+     font-family: Arial, sans-serif;
+     /* margin-top:20px; */
+     font-size:18px;
+ }
+ #missionVisionDiv {
+     width:100%;
+     min-height:220px;
+     height:auto;
+     /* background-color:red; */
+     display:flex;
+     gap:25px;
+     justify-content:center;
+     flex-wrap:wrap;
+ }
+ .missionVision {
+     width:35%;
+     /* height:100%; */
+     min-height:100%;
+     height:auto;
+     background-color:white;
+     filter:drop-shadow(2px 2px 2px gray);
+     padding:20px;
+     display:flex;
+     flex-direction:column;
+     gap:10px;
+     /* justify-content:center; */
+ }
+ .missionVisionHead {
+     font-family: Arial, sans-serif;
+     font-weight:bold;
+     font-size:30px;
+     color:blue;
+     margin-top:20px;
+ }
+ .missionVisionParagraph {
+     font-family: Arial, sans-serif;
+     font-size:17px;
+ }
+ #servicesDiv {
+     width:100%;
+     min-height:800px;
+     height:auto;
+     margin-top:40px;
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     flex-direction:column;
+     gap:20px;
+     padding-top:20px;
+     /* background-color:red; */
+ }
+ #services {
+     width:100%;
+     min-height:900px;
+     height:auto;
+     /* background-color:red; */
+     display:flex;
+     justify-content:center;
+     gap:25px;
+     flex-wrap:wrap;
+ }
+ .service {
+     width:300px;
+     height:470px;
+     background-color:#3940e5;
+     color:white;
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+     gap:14px;
+     border-bottom-left-radius:20px;
+     border-bottom-right-radius:20px;
+     border-radius:20px;
+     justify-content:space-between;
+     padding-bottom:30px;
+     margin-bottom:10px;
+ }
+ #serviceImageDiv {
+     width:100%;
+     height:180px;
+     /* background-color:purple; */
+ }
+ #serviceImage {
+     width:100%;
+     height:100%;
+     border-top-left-radius:20px;
+     border-top-right-radius:20px;
+ }
+ #serviceName {
+     font-size:20px;
+     font-weight:bold;
+     font-family: Arial, sans-serif;
+     text-align:center;
+     /* text-decoration:underline; */
+     text-underline-offset:6px;
+     /* margin-bottom:20px; */
+ }
+ #serviceListDiv {
+     width:100%;
+     height:180px;
+     /* background-color:yellow; */
+     display:flex;
+     flex-direction:column;
+     align-items:start;
+     margin-top:-10px;
+     font-family: Arial, sans-serif;
+     gap:15px;
+ }
+ #serviceButton {
+     width:90%;
+     height:45px;
+     font-family: Arial, sans-serif;
+     color:white;
+     background-color:red;
+     border:2px solid transparent;
+     border-radius:10px;
+     font-size:17px;
+     font-weight:bold;
+     cursor:pointer;
+ }
+ #serviceButton:hover {
+     background-color:transparent;
+     border:2px solid white;
+ }
+ #serviceListDiv ul li {
+     margin-bottom:3px;
+ }
+ #contactUsDiv {
+     width:100%;
+     min-height:420px;
+     height:auto;
+     /* background-color:red; */
+     margin-top:100px;
+     display:flex;
+     margin-bottom:20px;
+     justify-content:center;
+     flex-wrap:wrap;
+     padding-top:20px;
+ }
+ .contact {
+     width:30%;
+     height:100%;
+     /* background-color:green; */
+     padding:20px;
+     display:flex;
+     flex-direction:column;
+     gap:30px;
+ }
+ .formText {
+     font-family: Arial, sans-serif;
+     font-weight:bold;
+ }
+ .formInput {
+     height: 30px;
+     border-radius:7px;
+     padding-left:10px;
+     border: 2px solid #C0C0C0;
+     width: 80%;
+ }
+ #contactForm {
+     gap: 17px;
+ }
+ #formButton {
+     height:40px;
+     width:30%;
+     background-color:red;
+     cursor:pointer;
+     border:2px solid transparent;
+     border-radius:8px;
+     color:white;
+     font-family: Arial, sans-serif;
+     font-weight:bold;
+ }
+ #formButton:hover {
+     background-color:transparent;
+     border:2px solid black;
+     color: black;
+ }
+ #clientsDiv {
+     width:100%;
+     min-height:350px;
+     height:auto;
+     /* background-color:red; */
+     padding-top:20px;
+     margin-top:100px;
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+     gap:20px;
+ }
+ #clients {
+    width:100%;
+    min-height:100%;
+    height:auto;
+    /* background-color:red; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    flex-wrap:wrap;
+ }
+ .client {
+     width: 240px;
+     height: 240px;
+     background-color: white;
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     filter:drop-shadow(2px 2px 2px gray);
+ }
+ #clientImageDiv {
+     width:80%;
+     height:80%;
+     background-color: blue;
+ }
+ #clientImage {
+     width:100%;
+     height:100%;
+ }
+ #partnersDiv {
+     padding-top:20px;
+     width:100%;
+     height:300px;
+     /* background-color:red; */
+     margin-top:100px;
+     gap:20px;
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     flex-direction:column;
+ }
+ #partners {
+     width:240px;
+     height:240px;
+     background-color:white;
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     filter:drop-shadow(2px 2px 2px gray);
+ }
+ #partnerImageDiv {
+     width:80%;
+     height:80%;
+     /* background-color:blue; */
+ }
+ #partnersImage {
+     width:100%;
+     height:100%;
+ }
+ footer {
+     width:97%;
+     min-height:320px;
+     height:auto;
+     background-color:#3940e5;
+     margin-top:80px;
+     padding-top:20px;
+     padding-bottom:20px;
+     padding:20px;
+     flex-wrap:wrap;
+ }
+ #blueFooterDiv {
+    min-height:190px;
+    height:auto;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    padding-top:15px;
+    flex-wrap:wrap;
+    /* align-items:center; */
+    /* gap:7px; */
+    /* background-color:yellow; */
+ }
+ #redFooterDiv {
+    width:100%;
+    min-height:100px;
+    height:auto;
+    background-color:#db2639;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: Arial, sans-serif;
+    text-align:center;
+ }
+ .footerInfoDiv {
+     width:320px;
+     height:100%;
+     /* background-color:green; */
+     color:white;
+     display:flex;
+     flex-direction:column;
+     text-align:center;
+     /* justify-content:center; */
+     align-items:center;
+     font-family: Arial, sans-serif;
+     gap:10px;
+     margin-bottom:20px;
+ }
+ #footerInfoHead {
+     font-weight:bold;
+     font-size:24px; 
+ }

@@ -1,0 +1,346 @@
+#mainDiv {
+    width:100%;
+    height:800px;
+    background-color:#FAF9F6;
+    /* gap:20px; */
+ }
+ #head {
+     width:100%;
+     min-height:90px;
+     height:auto;
+     background-color:#3940e5;
+     /* border-radius: 40px; */
+     display:flex;
+     justify-content:center;
+     gap:10px;
+     align-items:center;
+     flex-wrap:wrap;
+ }
+ #logoDiv {
+     width:170px;
+     height:80%;
+     /* margin-right:70px; */
+     /* background-color:red; */
+ }
+ #logo {
+     width:100%;
+     height: 100%;
+ }
+ #hrefDiv {
+     height:80%;
+     width:60%;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     /* background-color:green; */
+ }
+ #mediaDiv {
+     width:15%;
+     min-height:80%;
+     height:auto;
+     display:flex;
+     align-items:center;
+     flex-wrap:wrap;
+
+     /* background-color:yellow; */
+ }
+ #nav {
+     width:100%;
+     display:flex;
+     justify-content:center;
+     flex-wrap:wrap;
+     text-align: center;
+     gap:40px;
+     
+     /* background-color:red; */
+ }
+ .navs {
+     color:white;
+     text-decoration: none;
+     font-family: Arial, sans-serif;
+     font-size:20px;
+ }
+ .navs:hover {
+     color:red;
+ }
+ #mediaNav {
+     min-height:30px;
+     height:auto;
+     width:100%;
+     display:flex;
+     justify-content:center;
+     gap: 30px;
+ }
+ .navs2 {
+     color:white;
+     font-size:25px;
+ }
+ #contentDiv {
+     width:100%;
+     height:630px;
+     /* background-color:yellow; */
+ }
+ #searchDiv {
+     width:100%;
+     height:70px;
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     /* background-color:red; */
+     margin-top:10px;
+ }
+ #search {
+     width:90%;
+     height:60%;
+     padding-left:20px;
+     background-color:#FAF9F6;
+     border:1px solid gray;
+ }
+ #searchButton {
+     width:10%;
+     height:68%;
+     background-color:red;
+     border:2px solid transparent;
+     font-family: Arial, sans-serif;
+     color:white;
+     font-weight:bold;
+     font-size:17px;
+     cursor:pointer;
+ }
+ #searchButton:hover {
+     background-color:#FAF9F6;
+     border:1px solid black;
+     color:black;
+ }
+ #categoriesDiv {
+     width:100%;
+     height:110px;
+     /* background-color:yellow; */
+ }
+ #categoryHead {
+     width:100%;
+     height:40px;
+     /* background-color:green; */
+     display:flex;
+     align-items:center;
+     justify-content:space-between;
+ }
+ #showCategories {
+     cursor:pointer;
+     font-family: Arial, sans-serif; 
+     font-weight:bold; 
+     color:blue;
+ }
+ #showCategories:hover {
+     color:red;
+ }
+ #categoryBottom {
+      width:100%;
+      height:60px;
+      /* background-color:white; */
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:15px;
+ }
+ .category {
+     min-width:150px;
+     width:auto;
+     height:35px;
+     background-color:white;
+     font-family: Arial, sans-serif;
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     cursor:pointer;
+ }
+ #productDiv {
+     width:100%;
+     min-height:500px;
+     height:auto;
+     /* background-color:red; */
+     display:flex;
+     justify-content:center;
+     flex-wrap:wrap;
+     gap:30px;
+     padding-bottom:30px;
+ }
+ .product {
+    width:300px;
+    height:295px;
+    background-color:white;
+    filter:drop-shadow(2px 2px 2px gray);
+    /* gap:10px; */
+ }
+ #productImageDiv {
+     width:100%;
+     height:190px;
+     /* background-color:red; */
+ }
+ #productImage {
+     width:100%;
+     height:100%;
+ }
+ #productInfo {
+     width:97%;
+     height:80px;
+     /* background-color:red; */
+     display:flex;
+     flex-direction:column;
+     padding-left:5px;
+     padding-right:5px;
+     padding-top:8px;
+     font-family: Arial, sans-serif;
+     font-weight:bold;
+     justify-content:center;
+     gap:3px;
+ }
+ #starsDiv {
+     width:100%;
+     height:40px;
+     /* background-color:red; */
+     display:flex;
+ }
+ .starsCard {
+     width:50%;
+     height:100%;
+     /* background-color:green; */
+     display:flex;
+     align-items:center;
+     gap:5px;
+ }
+ .stars {
+     color:orangered;
+ }
+ #previewButton {
+     height:100%;
+     width:60%;
+     /* background-color:red; */
+     color:black;
+     border:1px solid black;
+     font-family: Arial, sans-serif;
+     font-weight:bold;
+     cursor:pointer;
+ }
+ #previewButton:hover {
+     background-color:red;
+     color:white;
+ }
+ #cardButton {
+     height:100%;
+     width:30%;
+     /* background-color:red; */
+     /* color:white; */
+     border:1px solid black;
+     cursor:pointer;
+ }
+ #cardButton:hover {
+     background-color:red;
+     color:white;
+ }
+ 
+ #contactUsDiv {
+     width:100%;
+     min-height:420px;
+     height:auto;
+     /* background-color:red; */
+     margin-top:70px;
+     display:flex;
+     margin-bottom:20px;
+     justify-content:center;
+     flex-wrap:wrap;
+     padding-top:20px;
+ }
+ .contact {
+     width:30%;
+     height:100%;
+     /* background-color:green; */
+     padding:20px;
+     display:flex;
+     flex-direction:column;
+     gap:30px;
+ }
+ .formText {
+     font-family: Arial, sans-serif;
+     font-weight:bold;
+ }
+ .formInput {
+     height: 30px;
+     border-radius:7px;
+     padding-left:10px;
+     border: 2px solid #C0C0C0;
+     width: 80%;
+ }
+ #contactForm {
+     gap: 17px;
+ }
+ #formButton {
+     height:40px;
+     width:30%;
+     background-color:red;
+     cursor:pointer;
+     border:2px solid transparent;
+     border-radius:8px;
+     color:white;
+     font-family: Arial, sans-serif;
+     font-weight:bold;
+ }
+ #formButton:hover {
+     background-color:transparent;
+     border:2px solid black;
+     color: black;
+ }
+ 
+ footer {
+     width:97%;
+     min-height:320px;
+     height:auto;
+     background-color:#3940e5;
+     margin-top:80px;
+     padding-top:20px;
+     padding-bottom:20px;
+     padding:20px;
+     flex-wrap:wrap;
+ }
+ #blueFooterDiv {
+    min-height:190px;
+    height:auto;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    padding-top:15px;
+    flex-wrap:wrap;
+    /* align-items:center; */
+    /* gap:7px; */
+    /* background-color:yellow; */
+ }
+ #redFooterDiv {
+    width:100%;
+    min-height:100px;
+    height:auto;
+    background-color:#db2639;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: Arial, sans-serif;
+    text-align:center;
+ }
+ .footerInfoDiv {
+     width:320px;
+     height:100%;
+     /* background-color:green; */
+     color:white;
+     display:flex;
+     flex-direction:column;
+     text-align:center;
+     /* justify-content:center; */
+     align-items:center;
+     font-family: Arial, sans-serif;
+     gap:10px;
+     margin-bottom:20px;
+ }
+ #footerInfoHead {
+     font-weight:bold;
+     font-size:24px; 
+ }

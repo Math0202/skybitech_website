@@ -3,116 +3,336 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop - Spybitech Investment CC</title>
-    <link rel="stylesheet" href="cleaning_styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="fav.jpg" type="image/jpg">
+    <link rel="stylesheet" href="shop.css">
+    <title>Shop</title>
+
+    <style>
+
+
+    </style>
 </head>
 <body>
-    <header class="header">
-        <div class="logo"><img src="logo.png" alt="SkyBiTech" height="50"></div>
-        <nav class="nav">
-            <a href="index.html">HOME</a>
-            <a href="shop.html">SHOP</a>
-            <a href="#footer">CONTACT</a>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Items In Store</h1>
-            <p>High-quality computing solutions for all your needs</p>
-            <div class="cta-buttons">
-                <a href="#contact" class="btn btn-primary">Get a Quote</a>
-                <a href="#equipment" class="btn btn-secondary">Learn More</a>
+
+    <div id="mainDiv">
+
+        <header id="head">
+
+            <div id="logoDiv">
+                <img id="logo" src="logo.png">
             </div>
-        </div>
-    </section>
 
-    <section id="shop" class="shop-section">
-        <h2>Our Products</h2>
-        <div class="search-filter">
-            <input type="text" id="search-bar" placeholder="Search products...">
-            <select id="filter">
-                <option value="">All Categories</option>
-                <option value="cleaning">Cleaning Equipment</option>
-                <option value="software">Software</option>
-                <option value="hardware">Hardware</option>
-            </select>
-        </div>
-        <div class="product-grid" id="product-grid">
-            <!-- Product items will be dynamically inserted here -->
-        </div>
-    </section>
+            <div id="hrefDiv">
+                  <nav id="nav">
+                        <a class="navs" href="index.html">Home</a>
+                        <a class="navs" href="shop.html">Shop</a>
+                        <!-- <a class="navs" href="#servicesDiv">Services</a> -->
+                        <!-- <a class="navs" href="#clientsDiv">Clients</a> -->
+                        <!-- <a class="navs" href="#partnersDiv">Partners</a> -->
+                        <!-- <a class="navs" href="#aboutDiv">About</a> -->
+                        <a class="navs" href="#contactUsDiv">Contact</a>
+                  </nav>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i data-lucide="phone"></i>
-                        <div>
-                            <p class="font-semibold">Phone</p>
-                            <p>+264 85 806 5994</p>
-                            <p>WhatsApp: +264 85 352 2714</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i data-lucide="mail"></i>
-                        <div>
-                            <p class="font-semibold">Email</p>
-                            <p>info@spybitech.com.na</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i data-lucide="map-pin"></i>
-                        <div>
-                            <p class="font-semibold">Address</p>
-                            <p>70 John Meinet Street, Windhoek, Namibia</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i data-lucide="clock"></i>
-                        <div>
-                            <p class="font-semibold">Business Hours</p>
-                            <p>Weekdays: 05:00 – 18:00</p>
-                            <p>Weekends: By Special Request</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <div class="service-card">
-                        <img src="af8d9ac62dd43026957e1cf82a027637.gif" height="250px" alt="Inquiry Form Image">
-                        <h3>Leave Us a Note or Inquiry</h3>
-                        <form id="inquiry-form">
-                            <input type="email" name="user_email" placeholder="Email" required title="Email">
-                            <input type="text" name="user_name" placeholder="Full Name" required title="Full Name">
-                            <br><br>
-                            <textarea name="message" id="inquiry" placeholder="Enter your message here..." required></textarea>
-                            <br>
-                            <button type="submit" class="cta-button">Submit</button>
-                        </form>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
-    <script>
-        document.getElementById('inquiry-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            emailjs.sendForm('service_dlw3fhb', 'template_kgtxcv5', this)
-                .then(() => {
-                    alert('Your message has been sent successfully!');
-                }, (error) => {
-                    alert('Failed to send the message. Please try again later.');
-                    console.log('FAILED...', error);
-                });
-        });
-    </script>
-    <footer id="footer" class="footer">
-        <!-- Footer content as in index.html -->
-    </footer>
 
-    <script src="script.js"></script>
+            <div id="mediaDiv">
+                <nav id="mediaNav">
+                    <a class="navs2" href="#" style="color:#00FFFF"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="navs2" href="https://www.instagram.com/spybitech_cc/?hl=en" target="blank" style=" font-size: 30px; background: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF, #515BD4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-fill-color: transparent; display: inline-block;"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="navs2" href="https://wa.me/264853522714" target="blank" style="color: #7CFC00;"><i class="fa-brands fa-whatsapp"></i></a>
+                    
+                     <a class="navs2" href="#"><i class="fa-brands fa-facebook"></i></a>
+                </nav>
+            </div>
+             
+        </header>
+
+        <div id="contentDiv">
+
+            <div id="searchDiv">
+                  <input id="search" type="text" placeholder="Search">
+                  <button id="searchButton">Search</button>
+            </div>
+
+            <div id="categoriesDiv">
+                  <div id="categoryHead">
+                       <label type="label" style="font-family: Arial, sans-serif; font-weight:bold; font-size:25px;">Categories</label>
+                       <label id="showCategories" type="label">Show more</label>
+                  </div>
+                  <div id="categoryBottom">
+                        <div class="category">
+                             <label>Computers</label>
+                        </div>
+                        <div class="category">
+                            <label>Computers Parts</label>
+                       </div>
+                       <div class="category">
+                           <label>IT Accessories</label>
+                       </div>
+                       <div class="category">
+                           <label>Wi-Fi & Networking</label>
+                       </div>
+                       <div class="category">
+                             <label>Software & Licenses</label>
+                       </div>
+                       <div class="category">
+                            <label>Brands</label>
+                       </div>
+                       <div class="category">
+                        <label>Gaimg & Entertainment</label>
+                       </div>
+                       <div class="category">
+                         <label>Storage Devices</label>
+                       </div>
+                  </div>
+            </div>
+
+            <div id="productDiv">
+                  <div class="product">
+                       <div id="productImageDiv">
+                           <img id="productImage" src="images/macbook.jpeg">
+                       </div>
+                       <div id="productInfo">
+                             <label type="label" style="font-weight:bolder;">MacBook Pro</label>
+                             <label type="label" style="font-weight:bolder; font-size:13px;">N$ 30 000.00</label>
+                             <div id="starsDiv">
+                                   <div class="starsCard">
+                                        <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                                        <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                                        <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                                        <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                                        <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                                   </div>
+                                   <div class="starsCard" style="justify-content:end; gap:3px;">
+                                           <button id="previewButton" type="button" style="margin-right:6px;">Preview</button>
+                                           <button id="cardButton" type="button" style="margin-right:3px;"><i class="fa-solid fa-cart-shopping"></i></button>
+                                   </div>
+                             </div>
+                       </div>
+                  </div>
+
+
+
+
+                  <div class="product">
+                    <div id="productImageDiv">
+                        <img id="productImage" src="images/hp2.png">
+                    </div>
+                    <div id="productInfo">
+                          <label type="label" style="font-weight:bolder;">HP Core intel i5</label>
+                          <label type="label" style="font-weight:bolder; font-size:13px;">N$ 15 000.00</label>
+                          <div id="starsDiv">
+                                <div class="starsCard">
+                                     <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                                     <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                                     <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                                     <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                                     <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                                </div>
+                                <div class="starsCard" style="justify-content:end; gap:3px;">
+                                        <button id="previewButton" type="button" style="margin-right:6px;">Preview</button>
+                                        <button id="cardButton" type="button" style="margin-right:3px;"><i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                          </div>
+                    </div>
+               </div>
+
+
+
+               <div class="product">
+                <div id="productImageDiv">
+                    <img id="productImage" src="images/mouseWire.jpg">
+                </div>
+                <div id="productInfo">
+                      <label type="label" style="font-weight:bolder;">Wire Mouse</label>
+                      <label type="label" style="font-weight:bolder; font-size:13px;">N$ 80.00</label>
+                      <div id="starsDiv">
+                            <div class="starsCard">
+                                 <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                                 <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                                 <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                                 <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                                 <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                            </div>
+                            <div class="starsCard" style="justify-content:end; gap:3px;">
+                                    <button id="previewButton" type="button" style="margin-right:6px;">Preview</button>
+                                    <button id="cardButton" type="button" style="margin-right:3px;"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                      </div>
+                </div>
+           </div>
+
+
+
+
+
+           <div class="product">
+            <div id="productImageDiv">
+                <img id="productImage" src="images/mouse.jpg">
+            </div>
+            <div id="productInfo">
+                  <label type="label" style="font-weight:bolder;">Wireless Mouse</label>
+                  <label type="label" style="font-weight:bolder; font-size:13px;">N$ 40.00</label>
+                  <div id="starsDiv">
+                        <div class="starsCard">
+                             <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                             <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                             <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                             <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                             <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                        </div>
+                        <div class="starsCard" style="justify-content:end; gap:3px;">
+                                <button id="previewButton" type="button" style="margin-right:6px;">Preview</button>
+                                <button id="cardButton" type="button" style="margin-right:3px;"><i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                  </div>
+            </div>
+       </div>
+
+
+
+
+
+
+       <div class="product">
+        <div id="productImageDiv">
+            <img id="productImage" src="images/whiteKeyboard.jpeg">
+        </div>
+        <div id="productInfo">
+              <label type="label" style="font-weight:bolder;">Keyboard (white)</label>
+              <label type="label" style="font-weight:bolder; font-size:13px;">N$ 200.00</label>
+              <div id="starsDiv">
+                    <div class="starsCard">
+                         <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                         <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                         <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                         <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                         <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                    </div>
+                    <div class="starsCard" style="justify-content:end; gap:3px;">
+                            <button id="previewButton" type="button" style="margin-right:6px;">Preview</button>
+                            <button id="cardButton" type="button" style="margin-right:3px;"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+              </div>
+        </div>
+   </div> 
+                       
+   <div class="product">
+    <div id="productImageDiv">
+        <img id="productImage" src="images/ps4.jpg">
+    </div>
+    <div id="productInfo">
+          <label type="label" style="font-weight:bolder;">Sony Playstation 4 Pro</label>
+          <label type="label" style="font-weight:bolder; font-size:13px;">N$ 8 000.00</label>
+          <div id="starsDiv">
+                <div class="starsCard">
+                     <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                     <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                     <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                     <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                     <label class="stars" type="label"><i class="fa-solid fa-star"></i></label>
+                </div>
+                <div class="starsCard" style="justify-content:end; gap:3px;">
+                        <button id="previewButton" type="button" style="margin-right:6px;">Preview</button>
+                        <button id="cardButton" type="button" style="margin-right:3px;"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+          </div>
+    </div>
+</div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+            <div id="contactUsDiv">
+                <div class="contact">
+                     <label type="label" style="font-family: Arial, sans-serif; font-weight:bold; font-size: 40px; color:blue;">Contact Us</label>
+                     <label type="label" style="font-family: Arial, sans-serif;">Feel free to use the form or drop an email. Old-fashoined phone calls work too.</label>
+                     <kabel type="label" style="font-family: Arial, sans-serif;"><i class="fa-solid fa-phone-volume" style="margin-right:30px;"></i>+264 85 352 2714</kabel>
+                     <kabel type="label" style="font-family: Arial, sans-serif;"><i class="fa-solid fa-envelope" style="margin-right:30px;"></i>info@spybitech.com.na</kabel>
+                     <kabel type="label" style="font-family: Arial, sans-serif;"><i class="fa-solid fa-location-dot" style="margin-right:30px;"></i>70 John Meinet Street, Windhoek, Namibia</kabel>
+                </div>
+                <div id="contactForm" class="contact">
+                      <label class="formText" type="label">Name</label>
+                      <input class="formInput" type="text" placeholder="Name">
+                      <label class="formText" type="label">Email</label>
+                      <input class="formInput" type="text" placeholder="Email">
+                      <label class="formText" type="label">Message</label>
+                      <textarea class="formInput" rows="5" type="textarea" placeholder="Message" style="height: 140px; resize: vertical; padding-top:8px"></textarea>
+                      <button id="formButton" type="button">Submit</button>
+                </div>
+          </div>
+
+
+
+
+
+          
+        <footer>
+            <div id="blueFooterDiv">
+                  <div class="footerInfoDiv">
+                        <label id="footerInfoHead" type="label">About Us</label>
+                        <label id="footerInfoPar" type="label">Spybitech Investment CC specializes in IT solutions,
+                          cleaning services, and equipment supplies.</label>
+                  </div>
+
+                  <div class="footerInfoDiv">
+                     <label id="footerInfoHead" type="label">Quick Links</label>
+                     <label id="footerInfoPar" type="label">Home</label>
+                     <label id="footerInfoPar" type="label">Home</label>
+               </div>
+
+
+
+           <div class="footerInfoDiv">
+             <label id="footerInfoHead" type="label">Contact Us</label>
+             <label id="footerInfoPar" type="label">Office Number: +264 85 806 5994</label>
+             <label id="footerInfoPar" type="label">WhatsApp: +264 85 352 2714</label>
+             <label id="footerInfoPar" type="label">Email: info@spybitech.com.na</label>
+             <label id="footerInfoPar" type="label">Address: 70 John Meinet Street, Windhoek, Namibia</label>
+             <!-- <label id="footerInfoPar" type="label">Office Number: +264 85 806 5994</label> -->
+          </div>
+
+          <div class="footerInfoDiv">
+             <label id="footerInfoHead" type="label">Follow Us</label>
+             <label id="footerInfoPar" type="label" style="font-size:25px;"><span style="margin-right:10px;"><i class="fa-brands fa-facebook"></i></span><span style="margin-right:10px;"><i class="fa-brands fa-twitter"></i></span><span style="margin-right:10px;"><i class="fa-brands fa-instagram"></i></span><i class="fa-brands fa-linkedin"></i></label>
+          </div>
+
+
+            </div>
+
+            <div id="redFooterDiv">
+                 <label type="label">© 2024 Spybitech Investment CC. All rights reserved.</label>
+            </div>
+     </footer>
+ 
+  
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+     
+
 </body>
-</html> 
+</html>
